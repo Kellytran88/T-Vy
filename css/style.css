@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sue+Ellen+Francisco');
+/******************************************
+/* clear
+/*******************************************/
+.clear {
+  clear: both;
+}
+
+
+/******************************************
+/* STRUCTURE
+/*******************************************/
+
+body header, body section h2, body section p, .sectContinent a,
+.americaBanner li, .asiaBanner li, .europeBanner li {
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  border-top: 5px solid black
+}
+
+header {
+  width: 100%;
+  color: black;
+}
+
+.container{
+  width: 100%;
+  min-height: 400px;
+}
+
+.cityMenu{
+  float: right;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #002bff;
+  letter-spacing: 1px;
+}
+
+.countryList {
+  width: 100%;
+  min-height: 400px;
+}
+
+.countryList li{
+  overflow: hidden;
+  height: 60px;
+}
+
+.countryList h3 {
+  font-size: 30px;
+}
+
+.countryList p {
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  line-height: normal;
+}
+
+.scroll-content{
+  overflow-x: scroll;
+  height: 350px;
+}
+
+li#usa-description p:last-child, li#mexico-description p:last-child,
+li#carribean-description p:last-child {
+  padding-bottom: 20px;
+}
+
+/******************************************
+/* TOP PAGE - landing page
+/*******************************************/
+header h1 {
+  font-size: 30px;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 70px;
+  padding-left: 70px;
+}
+
+nav {
+  float: right;
+
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+}
+
+.menuBar a, .menuBar li:first-child  {
+  font-size: 20px;
+  line-height: 70px;
+  text-decoration: none;
+  padding-left: 80px;
+}
+
+/******************************************
+/* IMAGE COVER - landing page
+/*******************************************/
+.mainBannerStyle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/main-cover.jpg);
+  height: 450px;
+  background-position: 0px -180px;
+}
+
+/******************************************
+/* ABOUT - landing page
+/*******************************************/
+main.mainBannerStyle h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about {
+  min-height: 100px;
+  padding: 500px 0 100px;
+}
+
+section.about p {
+  font-size: 26px;
+  max-width: 550px;
+  text-align: justify;
+  margin: auto;
+  line-height: 55px;
+}
+
+section.about p:last-child {
+  text-align: right;
+}
+
+/******************************************
+/* NAVIGATION lower page - landing page
+/*******************************************/
+section.container h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/******************************************
+/* Continent - DESTINATION PAGE
+/*******************************************/
+.headerBar, .headerBar a, .sectContinent a, .asiaHeader h1 {
+  color: white;
+}
+
+.destinationBanner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/destination-cover.jpg);
+  height: 450px;
+  background-position: 0px -180px;
+}
+
+section.sectContinent ul {
+  width: 100%;
+  max-height: 200px;
+  margin: 480px auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+.sectContinent li {
+  width: 225px;
+  height: 134px;
+  border-radius: 40px;
+}
+
+.sectContinent li:nth-child(1) {
+    background-image: url(../images/asia.png);
+}
+
+.sectContinent li:nth-child(2) {
+    background-image: url(../images/europe.png);
+}
+
+.sectContinent li:nth-child(3) {
+    background-image: url(../images/asia.png);
+}
+
+.sectContinent a {
+  line-height: 134px;
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+
+/******************************************
+/* AMERCICA - country PAGE
+/*******************************************/
+.americaBanner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/ns-america.jpg);
+  height: 450px;
+  background-position: 0px -210px;
+}
+
+/******************************************
+/* EUROPE - country PAGE
+/*******************************************/
+.europeBanner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/europe-cover.jpg);
+  height: 450px;
+  background-position: 0px -368px;
+}
+
+/******************************************
+/* ASIA - country PAGE
+/*******************************************/
+.asiaBanner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/asia-cover1.jpg);
+  height: 450px;
+  background-position: 0px -348px;
+}
+
+/******************************************
+/* country list - for all continent
+/*******************************************/
+
+.americaBanner ul, .asiaBanner ul, .europeBanner ul {
+  min-width: 935px;
+  min-height: 400px;
+  flex-wrap: wrap;
+  padding: 470px 10px 0;
+}
+
+.americaBanner li, .asiaBanner li, .europeBanner li {
+  border-radius: 10px;
+  border: 2.5px solid black;
+  min-height: 60px;
+  width: 90%;
+  line-height: 60px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+/******************************************
+/* DROPDOWN DESTINATION BUTTON
+/*******************************************/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fffffd;
+    min-width: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 12px;
+    z-index: 1;
+    text-align: center;
+    margin-left: 69px;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a {
+  padding-left: 0;
+  line-height: 50px;
+}
+
+.dropdown-content li:first-child {
+  padding-left: 0;
+  line-height: 0;
+}
+
+div.dropdown:first-child {
+  padding-right: 15px;
+}
+
+
+.dropdown-content a:hover {
+  color: blue;
+}
+
+========
